@@ -3,6 +3,7 @@ const ApiError = require("../api-error");
 const NoteService = require("../services/note.service");
 const MongoDB = require("../utils/mongodb.util");
 
+//Tao chu thich moi
 exports.create = async (req, res, next) => {
     if (!req.body?.title) {
         return next(new ApiError(400, "Title can not be empty"));
